@@ -1,0 +1,28 @@
+h2{
+	background-color: green;
+	text-align:center;
+}
+#ammu{
+	color:red;/*this is the id selector so for id selector we should start id with #*/
+}
+.amrutha{
+	color: pink;/*this is the class selector so for class selector we should start with .(dot)*/
+}
+*{
+	text-align:center;/* * it is the useniversal selector that means it is applicable for total data available in the program*/
+}
+p,h5,h4,table{
+	background-color: aqua;/*it is the group selector in group selector we can separate them by using ,(camma)*/
+}
+.parent{
+	background-color: bisque;
+	margin: 5%;/*tHIS MARIGIN WILL GIVE GAP OF 5% FOR TOP,BOTTOM,LEFT AND RIGHT (ALL SIDES)*/
+	display: flex;/*it is tell host should we display flex-items in flex-container for this default value is inline*/
+}
+.child{
+	background-color: aqua;
+	margin: 4%;/*it will gtake space outside of the div*/
+	padding: 2%;/*it is like marigin only but it will take space from the letters(it will take space inside the continer only or in div only)*/
+}
+
+
