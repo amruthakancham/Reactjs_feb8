@@ -16,13 +16,20 @@ p,h5,h4,table{
 }
 .parent{
 	background-color: bisque;
-	margin: 5%;/*tHIS MARIGIN WILL GIVE GAP OF 5% FOR TOP,BOTTOM,LEFT AND RIGHT (ALL SIDES)*/
-	display: flex;/*it is tell host should we display flex-items in flex-container for this default value is inline*/
+	margin: 5%;/*THIS MARIGIN WILL GIVE GAP OF 5% FOR TOP,BOTTOM,LEFT AND RIGHT (ALL SIDES)*/
+	display: flex; /*it is tell host should we display flex-items in flex-container for this default value is inline*/
+	/*flex-direction: column;By default the flex direction is in row*/
+	/*flex-direction: column-reverse;flex-direction: row-reverse*/
+	justify-content: center;/*start, space-around and end are also justify content only*/
 }
 .child{
 	background-color: aqua;
 	margin: 4%;/*it will gtake space outside of the div*/
 	padding: 2%;/*it is like marigin only but it will take space from the letters(it will take space inside the continer only or in div only)*/
+}
+.or{
+	display: flex;
+	/*flex-direction: row-reverse;*/
 }
 
 

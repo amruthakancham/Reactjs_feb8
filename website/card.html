@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="image1.jpg">
+	<title>Profile Cards</title>
+	<style type="text/css">
+		.profile{
+			display: flex;
+			width:100%;
+			border:2px solid blue;
+			padding: 1%;
+			margin: 1%;
+		}
+		.profile>div{
+			padding: 1%;
+			margin: 1%;
+			width: 30%;
+			border: 2px solid maroon;
+			text-align: center;
+			box-shadow: 10px 10px 10px 10px;
+		}
+		img{
+			border-radius: 50% ;/*if we take 50% we will get total umage in rou d if we take 20% the borders only will get curve*/
+			border: 2px solid maroon;
+		}
+		button{
+			box-shadow: 2px 2px 2px 2px;
+			color:aqua;
+			width: 25%;
+		}
+		a{
+			text-decoration: none;
+		}
+		.copy{
+			text-align: center;
+			color: blue;
+			background-color: block;
+			margin: 1%;
+			padding: 1%;
+			width: 100%;
+		}
+		/*mobile: 320px to 480px
+		  tab: 481px to 768px
+		  mini desktop: 769px to 1024px
+		  large desktop: 1025px to 1200px*/
+		  /*Mobile View*/
+		  @media only screen and (min-width: 320px) and (max-width: 480px){
+		  	body{
+		  		background-color: yellow;
+		  	}
+		  	.profile{
+		  		display: flex;
+		  		flex-direction: column;
+		  		max-width: 100%;
+		  	}
+		  	.profile>div{
+		  		width:90%;
+		  	}
+		  	.copy{
+		  		max-width: 100%;
+		  	}
+
+		  }
+		  /*Tab View*/
+		   @media only screen and (min-width: 481px) and (max-width: 768px){
+		  	body{
+		  		background-color: blue;
+		  	}
+		  	.profile{
+		  		display: flex;
+		  		flex-direction: row-reverse;
+		  		max-width: 100%;
+		  		/*flex-wrap: wrap;*/
+		  	}
+		  	.profile>div{
+		  		width:90%;
+		  	}
+		  	.copy{
+		  		max-width: 100%;
+		  	}
+
+		  }
+		   /*Mini Desktop View*/
+		   @media only screen and (min-width: 769px) and (max-width: 1024px){
+		  	body{
+		  		background-color: pink;
+		  	}
+		  	.profile{
+		  		display: flex;
+		  		flex-direction: row;
+		  		max-width: 100%;
+		  		/*flex-wrap: wrap;*/
+		  	}
+		  	.profile>div{
+		  		width:90%;
+		  	}
+		  	.copy{
+		  		max-width: 100%;
+		  	}
+
+		  }
+		
+
+		}
+	</style>
+</head>
+<body>
+	<div class="profile">
+		<div class="card">
+			<img src="image.jpg" width="200px" height="200px" alt="profilecard">
+			<h1 style="color: maroon">Amrutha</h1>
+			<hr>
+			<h3>Hyderabad</h3>
+			<button><a href="#">view</a></button>
+		</div>
+		<div class="card">
+			<img src="image.jpg" width="200px" height="200px" alt="profilecard">
+			<h1 style="color: teal">Kancham</h1>
+			<hr>
+			<h3>Anantapur</h3>
+			<button><a href="#">view</a></button>
+		</div>
+		<div class="card">
+			<img src="image.jpg" width="200px" height="200px" alt="profilecard">
+			<h1 style="color: blue">Ammu</h1>
+			<hr>
+			<h3>ATP</h3>
+			<button><a href="#">view</a></button><!-- if we give / it will redirect into the root dirctory; if we give # then in the url at the end it will be # -->
+		</div>
+	</div>
+	<!-- <a href="mailto:kanchamamrutha@gmail.com">Gmail</a> -->
+	<!-- Footer -->
+	<div class="copy">
+		<h1>All copy Rights Recived by Kancham Amrutha@2021</h1>
+	</div>
+
+
+</body>
+</html>
