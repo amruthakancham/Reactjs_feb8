@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta name="description" content="profile card">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="image1.jpg">
 	<title>Profile Cards</title>
@@ -21,7 +22,7 @@
 			box-shadow: 10px 10px 10px 10px;
 		}
 		img{
-			border-radius: 50% ;/*if we take 50% we will get total umage in rou d if we take 20% the borders only will get curve*/
+			border-radius: 20% ;/*if we take 50% we will get total umage in round if we take 20% the borders only will get curve*/
 			border: 2px solid maroon;
 		}
 		button{
@@ -34,11 +35,23 @@
 		}
 		.copy{
 			text-align: center;
-			color: blue;
+			color: black;
 			background-color: block;
 			margin: 1%;
 			padding: 1%;
 			width: 100%;
+		}
+		.header{
+			display: flex;
+			width: 100%;
+			margin: 1%;
+			padding: 1%;
+		}
+		.header>div{
+			width: 50%;
+			padding: 1%;
+			margin: 1%;
+
 		}
 		/*mobile: 320px to 480px
 		  tab: 481px to 768px
@@ -49,13 +62,14 @@
 		  	body{
 		  		background-color: yellow;
 		  	}
-		  	.profile{
+		  	.profile,.header{
 		  		display: flex;
 		  		flex-direction: column;
 		  		max-width: 100%;
 		  	}
-		  	.profile>div{
+		  	.profile>div,.header>div{
 		  		width:90%;
+		  		text-align: center;
 		  	}
 		  	.copy{
 		  		max-width: 100%;
@@ -106,6 +120,17 @@
 	</style>
 </head>
 <body>
+	<div class="header">
+		<div class="left">
+			<img src="image.jpg" width="200px" height="200px" alt="profile">
+		</div>
+		<div class="right">
+			<h2 style="color: blue">ReactJs</h2>
+			<h2 style="color: blue">Online Training</h2>
+			<h2 style="color: blue">APSSDC</h2>
+		</div>
+	</div>
+	<h1 style="text-align: center; color: maroon">My Work</h1>
 	<div class="profile">
 		<div class="card">
 			<img src="image.jpg" width="200px" height="200px" alt="profilecard">
