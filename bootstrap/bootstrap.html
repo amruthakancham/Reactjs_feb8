@@ -1,27 +1,135 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
 	<title>BootStrap</title>
-	<!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<!-- <style type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--Online Link for CSS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ -->
+ <!-- Online link for Js and Jquery -->
+ <!-- JavaScript Bundle with Popper -->
+ <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+lbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+ </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+ <!-- <style type="text/css">
 	h1{
 		color: blue;
 	}
 </style> -->
 </head>
 <body>
-	<h1 class="text-primary text-center">Hello World</h1>
+	<!-- <h1 class="text-primary text-center">Hello World</h1>
 	<h1 class="text-right">Hello World</h1>
 	<h1 class="text-info text-right">Good Evening to all</h1>
 	<h1 class="text-danger">Amrutha</h1>
 	<h1 class="text-warning">Banubi</h1>
 	<h1 class="text-success">Praveen</h1>
 	<h1 class="text-secondary text-left">Chaitanya</h1>
-	<h1 class="bg-dark text-light text-center w-50">Sunandha</h1><!-- w means width -->
+	<h1 class="bg-dark text-light text-center w-50">Sunandha</h1>w means width
 	<p class="h1">Kancham Amrutha Reddy</p>
 	<p class="h2">Infinite Computer Solutions</p>
-	<p class="h3">ICS</p>
+	<p class="h3">ICS</p> 
+
+	<h1 class="text-uppercase">good Morning</h1>
+	<h1 class="text-lowercase">GOOD MORNING</h1>
+	<h2 class="text-capitalize">good morning kancham amrutha reddy</h2>
+	<div class="text-center">
+		<h1 class="invisible">Good Evening</h1>
+		<h1>Good Afternoon</h1>
+	</div> -->
+	<h1>Table</h1>
+	<table class="table bg-info table-responsive text-uppercase text-light">
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Company</th>
+		</tr>
+		<tr>
+			<td>Amrutha</td>
+			<td>amrutha@gmail.com</td>
+			<td>ICS</td>
+		</tr>
+		<tr>
+			<td>Banubi</td>
+			<td>banubi@gmail.com</td>
+			<td>TCS</td>
+		</tr>
+		<tr>
+			<td>Praveen</td>
+			<td>praveen@gmail.com</td>
+			<td>Army</td>
+		</tr>
+		<tr>
+			<td>Chaitanya</td>
+			<td>chaitanya@gmail.com</td>
+			<td>Civil</td>
+		</tr>
+	</table>
+	<p class="lead">Amrutha</p>
+	<p>Damodar</p>
+	<p>Sunandha</p>
+	<p>Anil</p>
+	<h1>Buttons</h1>
+	<button>ClickMe</button>
+	<button class="btn">Click</button>
+	<input type="" name="" class="btn" value="clickMe">
+	<a href="" class="btn">Click</a>
+
+	<a href="" class="btn btn-success">Ammu</a>
+	<input type="" name="" class="btn btn-primary w-20" value="Amru">
+	<button class="btn btn-danger">Kancham</button>
+
+	<button class="btn btn-lg btn-success">Surya</button><!-- lg means large devices large ltabs(>=992px) -->
+	<button class="btn btn-sm btn-success">Surya</button><!-- sm means small devices small tabs(>=576px) -->
+	<button class="btn btn-xs btn-success">Surya</button><!-- xs means small devices for mobiles (<576px)-->
+	<button class="btn btn-md btn-success">Surya</button><!-- md means medium devices for mini desktop(>=768px-->
+	<button class="btn btn-xl btn-success">Surya</button><!-- xl means Extra Large devices (>=1200px-->
+
+	<h1>Display</h1>
+	<h1 class="display-1">Hi</h1><!-- for display-1 it will take 96pxand this can also be called as 6rem here rem means root element 1 rem =16px -->
+	<h1 class="display-2">Hello</h1><!-- display-2 means -display-1=8px or 96px 5.5rem 1rem=16px -display-1=8px -->
+	<h1 class="display-3">Namaste</h1><!-- 96px 4.5rem 1rem=16px -display-1=8px -->
+	<h1 class="display-4">CanI</h1><!-- 96px 3.5rem 1rem=16px -display-1=8px -->
+	<h1 class="display-5">CallYou</h1><!-- 96px 3.5rem 1rem=16px -display-1=8px -->
+	<div class="text-center"></div>
+	<h1 class="display-4">Amrutha</h1>
+	<h2 class="lead">Associate Software Engineer</h2>
+	<h3>amrutha@gmail.com</h3>
+
+	<h1>Alert</h1><!-- If we wont semicolon also no issue will come the output will be same whetjer you use semicolon or not -->
+	<h1>&times;</h1>
+	<h1>&#10004;</h1>
+
+	<div class="alert alert-dismiss alert-warning">
+		<h1 class="close" data-dismiss="alert">&times;</h1>
+		<h1>ClickMe</h1>
+	</div>
+	<!--margin or padding
+		if we take 0 it will eliminate margin or padding and will set 0 only
+		if we take 1 it will set margin or padding to $Spacer * .25
+		if we take 2 it will set margin or padding to $Spacer * .5 
+		if we take 3 it will set margin or padding to $Spacer 
+		if we take 4 it will set margin or padding to $Spacer * 1.5
+		if we take 5 it will set margin or padding to $Spacer * 3
+		if we take auto it will set margin to auto -->
+	<div class="text-center bg-primary p-2 m-2 py-2 px-2"><!-- py is for top and bottom and px for left and right -->
+		<h1 class="display-4">Amrutha</h1>
+		<h2 class="lead">Associate Software Engineer</h2>
+		<h3>amrutha@gmail.com</h3>
+	</div>
+	<div>
+		<h1>Image</h1>
+		<img src="Image.png" class="img-circle" style="border: 2px solid blue">
+		<img src="Image.png" class="img-rounded" style="border: 2px solid blue">
+		<img src="Image.png" class="img-thumbnail" style="border: 2px solid blue">
+	</div>
+
+
 
 
 </body>
